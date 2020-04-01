@@ -3,7 +3,7 @@ import classes from "./Name.module.css"
 
 const Name = () => {
     return (
-<div className={classes.name}>Суворов Никита Алексеевич</div>
+        <div className={classes.name}> Никита </div>
     );
 };
 

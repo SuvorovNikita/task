@@ -1,10 +1,10 @@
 import React from "react";
-import classes from "./Message.module.css"
+import classes from "./Time.module.css"
 
-const Message = () => {
+const Time = () => {
     return (
-        <div className={classes.text}>Решаю задачки</div>
+        <div className={classes.time}>13:22</div>
     )
 }
 
-export default Message;
+export default Time;

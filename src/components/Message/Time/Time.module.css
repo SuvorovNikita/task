@@ -1,7 +1,6 @@
 
-.text {
-    line-height: 1.7;
-    text-align: left;
-    color: #fff;
-    font-size: 14px;
+.time {
+    text-align: right;
+    color: #6d7f8f;
+    font-size: 12px;
 }
