@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import classes from './App.module.css';
 import Name from "./components/Message/Name/Name";
 import Message from "./components/Message/Message";
 import Time from "./components/Message/Time/Time";
@@ -8,10 +8,10 @@ import Avatar from "./components/Message/Avatar/Avatar";
 
 function App() {
     return (
-        <div className="App">
-            <div className="wrapper">
+        <div className={classes.App}>
+            <div className={classes.wrapper}>
                 <Avatar/>
-                <div className="wrapper-message">
+                <div className={classes.wrapperMessage}>
                     <Name/>
                     <Message/>
                     <Time/>
