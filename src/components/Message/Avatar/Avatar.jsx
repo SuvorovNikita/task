@@ -1,10 +1,12 @@
 import React from "react";
 import classes from "./Avatar.module.css";
+import avatar from "./photo.jpg";
+
 
 const Avatar = () => {
     return (
         <div className={classes.avatar}>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSqg5pasC9Ji33PvghGRsB22Jqz_bvOLk1j9KEIRJBdOH17ydd7&usqp=CAU" alt=""/>
+            <img src={avatar} alt=""/>
         </div>
     )
 };
