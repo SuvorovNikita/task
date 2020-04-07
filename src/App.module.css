@@ -2,10 +2,9 @@
     text-align: center;
 }
 
-.qualities {
-
+.filterActive {
+    color: coral;
 }
-
 .text {
     color: #6e1d12;
     font-weight: bold;

@@ -10,13 +10,16 @@ import Qualities from "./components/Qualities/Qualities";
 function App() {
 
     let proper = [
-        {name: "Трудолюбие", },
-        {name: "Терпеливость" },
+        {name: "Трудолюбие",},
+        {name: "Терпеливость"},
         {name: "Усердие"},
     ];
 
-    let pro = proper.map(prof => {
-        return  (<Qualities  properties={prof.name}/>)
+    let classForAll = this.props.filterValue === "Усердие" ? "filterActive" : "";
+
+    let pro = proper.map((prof, index) => {
+
+        return (<Qualities properties={prof.name} key={index}/>)
     });
 
 
@@ -31,7 +34,7 @@ function App() {
                 </div>
             </div>
             <div className={classes.text}>Качества</div>
-            <div className={classes.qualities} key={Qualities.id}>
+            <div>
                 {pro}
             </div>
         </div>
