@@ -1,4 +1,14 @@
+.App {
+    text-align: center;
+}
+.qualities {
 
+}
+
+.text {
+    color: #6e1d12;
+    font-weight: bold;
+}
 .wrapper {
     display: flex;
     justify-content: center;
@@ -20,7 +30,7 @@
     padding: 11px;
 }
 
-.wrapper-message:after {
+.wrapperMessage:after {
     bottom: 0;
     left: -8px;
     position: absolute;
