@@ -10,13 +10,15 @@ import Qualities from "./components/Qualities/Qualities";
 function App() {
 
     let proper = [
-        {name: "Трудолюбие"},
+        {name: "Трудолюбие", },
         {name: "Терпеливость"},
-        {name: "Усердие"}
+        {name: "Усердие"},
     ];
+
     let pro = proper.map(prof => {
-        return (<Qualities properties={prof.name}/>)
+        return  (<Qualities properties={prof.name}/>)
     });
+
 
     return (
         <div className={classes.App}>

@@ -1,13 +1,15 @@
 import React from "react";
 import classes from "./Qualities.module.css";
 
-const Qualities = (props) => {
+class Qualities extends React.Component {
+    render = () => {
+        return (<div>
+                <div className={classes.qualitiesItem}>{this.props.properties}</div>
+            </div>
+        );
+    };
+}
 
-    return (<div>
-            <div className={classes.qualitiesItem}>{props.properties}</div>
-        </div>
-    );
-};
 
 export default Qualities;
 
