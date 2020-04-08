@@ -4,3 +4,7 @@
 .qualitiesItem {
     color: #6e1d12;
 }
+
+.activeClass {
+    color: green;
+}

@@ -10,18 +10,14 @@ import Qualities from "./components/Qualities/Qualities";
 function App() {
 
     let proper = [
-        {name: "Трудолюбие",},
-        {name: "Терпеливость"},
-        {name: "Усердие"},
+        {name: "Трудолюбие", id: 0, active: false},
+        {name: "Терпеливость", id: 1, active: true},
+        {name: "Усердие", id: 2, active: false}
     ];
 
-    let classForAll = this.props.filterValue === "Усердие" ? "filterActive" : "";
-
     let pro = proper.map((prof, index) => {
-
-        return (<Qualities properties={prof.name} key={index}/>)
+        return (<Qualities key={index}  properties={prof}/>)
     });
-
 
     return (
         <div className={classes.App}>
