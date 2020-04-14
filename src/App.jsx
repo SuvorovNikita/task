@@ -5,6 +5,7 @@ import Message from "./components/Message/Message";
 import Time from "./components/Message/Time/Time";
 import Avatar from "./components/Message/Avatar/Avatar";
 import Qualities from "./components/Qualities/Qualities";
+import Add from "./components/Add/Add";
 
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
     ];
 
     let pro = proper.map((prof, index) => {
-        return (<Qualities key={index}  properties={prof}/>)
+        return (<Qualities key={index} properties={prof}/>)
     });
 
     return (
@@ -32,6 +33,7 @@ function App() {
             <div className={classes.text}>Качества</div>
             <div>
                 {pro}
+                <Add/>
             </div>
         </div>
     );
