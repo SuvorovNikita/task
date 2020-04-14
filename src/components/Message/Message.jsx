@@ -4,7 +4,7 @@ import classes from "./Message.module.css";
 
 const Message = () => {
     return (
-        <div className={classes.text}>asdasfdgggggggggggggggggg gggggggggggggggggggggggggggggggfc</div>
+        <div className={classes.text}>Текст Текст Текст Текст</div>
     )
 };
 

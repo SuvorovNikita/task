@@ -17,7 +17,7 @@ function App() {
     ];
 
     let pro = proper.map((prof, id) => {
-        return (<Qualities key={id} properties={prof}/>)
+        return (<Qualities key={id}  properties={prof}/>)
     });
 
     return (
@@ -31,8 +31,10 @@ function App() {
                 </div>
             </div>
             <div className={classes.text}>Качества</div>
-            {pro}
-            <Add />
+            <div>
+                {pro}
+                <Add/>
+            </div>
         </div>
     );
 }
