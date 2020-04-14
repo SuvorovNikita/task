@@ -16,8 +16,8 @@ function App() {
         {name: "Усердие", id: 2, active: false}
     ];
 
-    let pro = proper.map((prof, index) => {
-        return (<Qualities key={index} properties={prof}/>)
+    let pro = proper.map((prof, id) => {
+        return (<Qualities key={id} properties={prof}/>)
     });
 
     return (
@@ -31,10 +31,8 @@ function App() {
                 </div>
             </div>
             <div className={classes.text}>Качества</div>
-            <div>
-                {pro}
-                <Add/>
-            </div>
+            {pro}
+            <Add />
         </div>
     );
 }
