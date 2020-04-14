@@ -5,7 +5,7 @@ class Qualities extends React.Component {
 
     render = () => {
 
-        let qualitiesStyle = this.props.properties.active ? classes.activeClass : classes.qualitiesItem
+        let qualitiesStyle = this.props.properties.active ? classes.activeClass : classes.qualitiesItem;
 
         return (<div>
                 <div className={qualitiesStyle}>{this.props.properties.name}</div>
